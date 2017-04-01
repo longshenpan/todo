@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Attendence</title>
+
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" type="text/css" href="lib/ionic/css/ionic.css">
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorke r' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+
+  </head>
+  <body ng-controller="mainCtr" ng-cloak>
+        <ion-nav-bar class="bar-positive nav-title-slide-ios7">
+          <!-- <ion-nav-back-button>
+            <i class="ion-arrow-left-c"></i>
+          </ion-nav-back-button> -->
+        </ion-nav-bar>
+        <ion-nav-view animation="slide-left-right">
+        </ion-nav-view>
+    <!-- cordova script (this will be a 404 during development) -->
+        <script src="cordova.js"></script>
+        <script data-main="js/requireMain" src="lib/require.js" ></script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<ion-view view-title="{{menuInfo.menuItemTitle}}">
+	<ion-content has-header="true" padding="true">
+	    <div class="menu-wrapper">
+	    	<div class="menu-item-wrapper">
+	    		<div class="item-row">
+	    			<div class="col">
+	    				<a class="icon ion-compose"  menu-open ui-sref="tabs.signRecords()">
+	    				</a>
+	    				<div class="operation-caption"><span>打卡记录</span></div>
+	    			</div>
+	    			<div class="col" >
+	    				<a class="icon ion-stats-bars" style="background: #85CA60;" href="#/tab/signRecords">
+	    				</a>
+	    				<div class="operation-caption"><span>考勤报表</span></div>
+	    			</div>
+	    			<div class="col">
+	    				<a class="icon-building-o" style="background: #EDAD21;" ui-sref="attendencePro()">
+	    				</a>
+	    				<div class="operation-caption"><span>考勤项目</span></div>
+	    			</div>
+	    		</div>
+	    		<div class="item-row">
+	    			<div class="col">
+	    				<a class="icon ion-navicon" style="background: #E87657;" href="#/view/0">
+	    				</a>
+	    				<div class="operation-caption"><span>打卡设置</span></div>
+	    			</div>
+	    			<div class="col">
+	    				<a class="icon-calendar-plus-o" style="background: #AC68B5;" ui-sref="testtt()">
+	    				</a>
+	    				<div class="operation-caption"><span>足迹</span></div>
+	    			</div>
+	    			<div class="col">
+	    				<a style="background: #CED372;" ui-sref="signM()">
+	    					<img ng-src="img/MapMarker_48px.png"/>
+	    				</a>
+	    				<div class="operation-caption"><span>签到管理</span></div>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </div>
+	</ion-content>
+</ion-view>

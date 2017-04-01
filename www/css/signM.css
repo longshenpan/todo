@@ -1,0 +1,65 @@
+.sign-wrapper {
+    height: 24%;
+    overflow: hidden;
+    border-right-style: groove;
+}
+.sign-wrapper .sign-head{
+	padding-left: 5px;
+	height: 30px;
+	line-height: 30px;
+	background: #F0F0F0;
+	color: #A3A337;
+}
+.sign-wrapper .row{
+	display: flex;
+	margin-top: 5px;
+}
+.sign-wrapper .row .col{
+	flex: 1;
+}
+.sign-wrapper .row .col span{
+	display: inline-block;
+	margin-left: 18px;
+}
+
+.sign-wrapper .row .col select{
+	width: 190px;
+}
+
+.sign-wrapper .row .col button{
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+	background: lightblue;
+	box-shadow: 1px 1px 0 lightgray;
+}
+.sign-map-wrapper{
+	position: relative;
+	height: 500px;
+	overflow: hidden;
+}
+.sign-map-wrapper #sign-map {
+	height: 400px;
+}
+
+.sign-map-wrapper .mask{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(211, 211, 211, 0.6);
+}
+
+.sign-map-wrapper .mask .mask-info{
+	position: absolute;
+	width: 60%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: transparent;
+}
+/*清除百度地图logo*/
+.anchorBL{
+	display:none;
+}

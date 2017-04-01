@@ -1,0 +1,41 @@
+<ion-view view-title="{{vm.title}}">
+	<ion-nav-buttons side='left'>
+		<i class="icon ion-chevron-left" ng-click="actions.goBack()"><span style="display: inline-block;height: 34px;vertical-align: middle;">
+		</span></i>
+	</ion-nav-buttons>
+	<ion-content has-header="true" padding="true" class="energized-bg">
+		<div class="list card">
+			<div class="item item-avatar">
+				<img src="./img/me.png">
+				<h2 ng-bind="vm.user.name"></h2>
+				<p ng-bind="vm.user.code"></p>
+			</div>
+		</div>
+		<div class="list list-inset">
+		    <div class="item row balanced-bg light">
+		     	<div class="col col-20" ng-bind="vm.label.company"></div>
+		     	<div class="col" ng-bind="vm.user.company"></div>
+		    </div>
+		    <div class="item row calm-bg light">
+		     	<div class="col col-20" ng-bind="vm.label.department"></div>
+		     	<div class="col" ng-bind="vm.user.department"></div>
+		    </div>
+		    <div class="item row calm-bg light">
+		     	<div class="col col-20" ng-bind="vm.label.job"></div>
+		     	<div class="col" ng-bind="vm.user.job"></div>
+		    </div>
+		    <div class="item row calm-bg light">
+		     	<div class="col col-20" ng-bind="vm.label.cellphone"></div>
+		     	<div class="col" ng-bind="vm.user.cellphone"></div>
+		    </div>
+		    <div class="item row calm-bg light">
+		     	<div class="col col-20" ng-bind="vm.label.mail"></div>
+		     	<div class="col" ng-bind="vm.user.mail"></div>
+		    </div>
+		</div>
+	</ion-content>
+	<div style="position: absolute; bottom: 0; z-index: 1000; width: 100%; padding: 5px; background-color: rgba(55,55,55, 1);" class="button-bar">
+		<button class="button button-positive" ng-click="actions.edit()" style="background-color: rgba(56,126,245, 0.8); margin-right: 5px;">编辑</button>
+		<button class="button button-positive" ng-click="actions.save()" style="background-color: rgba(56,126,245, 0.8); margin-left: 5px;">保存</button>
+	</div>
+</ion-view>
